@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'alarms/shutdown', component: ShutdownMethodComponent},
   {path:'calendar', component: CalendarComponent},
   {path:'profile', component: ProfileComponent},
-  {path:'login', component: LoginComponent},
+  {path:'', component: LoginComponent},
 ];
 
 @NgModule({

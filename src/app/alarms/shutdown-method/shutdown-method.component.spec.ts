@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginWebComponent } from './login-web.component';
+import { ShutdownMethodComponent } from './shutdown-method.component';
 
-describe('LoginWebComponent', () => {
-  let component: LoginWebComponent;
-  let fixture: ComponentFixture<LoginWebComponent>;
+describe('ShutdownMethodComponent', () => {
+  let component: ShutdownMethodComponent;
+  let fixture: ComponentFixture<ShutdownMethodComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginWebComponent ]
+      declarations: [ ShutdownMethodComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LoginWebComponent);
+    fixture = TestBed.createComponent(ShutdownMethodComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

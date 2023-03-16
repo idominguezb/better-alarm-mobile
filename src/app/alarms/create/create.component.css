@@ -1,0 +1,30 @@
+.mat-button-toggle-group {
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  border: 1px solid #000;
+}
+
+.mat-button-toggle {
+  height: 36px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-button-toggle:first-child {
+  border-bottom: 1px solid #000;
+}
+
+.mat-button-toggle:last-child {
+  border-left: none;
+}
+
+.mat-button-toggle-checked {
+  background-color: #000;
+  color: #fff;
+  line-height: 1 !important;
+}
+
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+  line-height: 1 !important;
+  padding: 0 !important;
+}

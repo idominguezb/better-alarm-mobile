@@ -1,0 +1,38 @@
+<section class="flex flex-col items-center justify-center h-screen">
+  <img mat-card-image class="w-fit" src="assets/logo.png" alt="Better alarm">
+
+  <p class="text-center my-11 max-w-[50%] leading-5">Recuerda siempre los eventos importantes</p>
+
+  <div class="flex flex-col items-center max-w-[287px] w-full gap-5">
+    <button [routerLink]="'/alarms'"
+      class="bg-blue flex items-center text-white font-rubik text-lg font-semibold p-4 py-3 rounded-[10px] w-full">
+      <img src="assets/facebook.svg" alt="" class="mr-4">
+      Sign In with Facebook
+    </button>
+    <button [routerLink]="'/alarms'"
+      class="bg-white flex items-center text-black/54 font-rubik text-lg font-semibold p-4 py-3 rounded-[10px] w-full google">
+      <img src="assets/google.svg" alt="" class="mr-4">
+      Sign In with Google
+    </button>
+    <button [routerLink]="'/alarms'"
+      class="bg-black flex items-center text-white font-rubik text-lg font-semibold p-4 py-3 rounded-[10px] w-full">
+      <img src="assets/apple.svg" alt="" class="mr-4">
+      Sign In with Apple
+    </button>
+  </div>
+
+  <div class="flex items-center justify-center w-full px-9 my-11">
+    <div class="flex-1">
+      <mat-divider class="border-black"></mat-divider>
+    </div>
+    <div class="px-2.5 mat-typography">o</div>
+    <div class="flex-1">
+      <mat-divider class="border-black"></mat-divider>
+    </div>
+  </div>
+
+  <a [routerLink]="'/alarms'" routerLinkActive="router-link-active"  class="flex items-center  text-black text-xl font-roboto font-medium">
+    <span>Crear Alarma</span>
+    <img src="assets/right.svg" alt="" class="relative ml-2 top-[3px]">
+  </a>
+</section>

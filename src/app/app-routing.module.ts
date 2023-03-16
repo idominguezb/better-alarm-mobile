@@ -1,11 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginMovilComponent } from './movil/login-movil/login-movil.component';
-import { LoginWebComponent } from './web/login-web/login-web.component';
+import { LoginComponent } from './login/login.component';
+import { AlarmsComponent } from './alarms/alarms.component';
+import { CreateAlarmComponent } from './alarms/create/create.component';
+import { SilenceComponent } from './alarms/silence/silence.component';
+import { SoundComponent } from './alarms/sound/sound.component';
+import { ShutdownMethodComponent } from './alarms/shutdown-method/shutdown-method.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-  {path:'movil/login', component: LoginMovilComponent},
-  {path:'web/login', component: LoginWebComponent}
+  {path:'alarms', component: AlarmsComponent},
+  {path:'alarms/create', component: CreateAlarmComponent},
+  {path:'alarms/sound', component: SoundComponent},
+  {path:'alarms/silence', component: SilenceComponent},
+  {path:'alarms/shutdown', component: ShutdownMethodComponent},
+  {path:'calendar', component: CalendarComponent},
+  {path:'profile', component: ProfileComponent},
+  {path:'login', component: LoginComponent},
 ];
 
 @NgModule({

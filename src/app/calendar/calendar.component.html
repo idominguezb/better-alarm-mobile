@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="text-black text-lg font-rubik font-bold mb-5">Alarmas programadas</h1>
+
+  <div class="mb-3">
+    <mat-calendar ></mat-calendar>
+  </div>
+
+  <div>
+    <div class="rounded-md bg-black py-1 px-4 text-white mb-3">
+      <div class="flex justify-between items-center font-rubik">
+        <mat-slide-toggle></mat-slide-toggle>
+        <div class="ml-4">Despertar</div>
+        <div class="ml-auto text-base">7:30 AM</div>
+      </div>
+    </div>
+    <div class="rounded-md bg-black py-1 px-4 text-white mb-3">
+      <div class="flex justify-between items-center font-rubik">
+        <mat-slide-toggle></mat-slide-toggle>
+        <div class="ml-4">Pausa activa</div>
+        <div class="ml-auto text-base">10:30 AM</div>
+      </div>
+    </div>
+    <div class="rounded-md bg-black py-1 px-4 text-white mb-3">
+      <div class="flex justify-between items-center font-rubik">
+        <mat-slide-toggle></mat-slide-toggle>
+        <div class="ml-4">Pastilla</div>
+        <div class="ml-auto text-base">05:30 PM</div>
+      </div>
+    </div>
+  </div>
+
+  <div [routerLink]="'/alarms/create'"
+    class="w-[49px] min-h-[49px] h-[49px] rounded-full bg-body flex items-center justify-center cursor-pointer mt-5
+    self-center">
+    <img src="assets/plus.svg" alt="">
+  </div>
+
+  <app-menu></app-menu>
+</div>

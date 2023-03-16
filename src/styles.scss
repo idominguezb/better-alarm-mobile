@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.mat-mdc-slider .mdc-slider__thumb-knob {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+.mat-mdc-slider .mdc-slider__track--inactive {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  opacity: 1 !important;
+}
+
+.mat-mdc-slider .mdc-slider__track--active_fill {
+  border-top: transparent !important;
+}
+
+:root {
+  --mdc-theme-primary: #000 !important;
+  --mdc-theme-secondary: #000 !important;
+  --mdc-theme-background: #000 !important;
+  --mdc-theme-surface: #000 !important;
+  --mdc-theme-error: #000 !important;
+}
+
+.mat-mdc-slide-toggle .mdc-switch {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.mat-mdc-slide-toggle .mdc-switch .mdc-switch__track {
+  height: 26px !important;
+  border-radius: 20px !important;
+}
+
+.mdc-switch__icon {
+  display: none !important;
+}
+
+.mat-mdc-slide-toggle .mdc-switch:enabled .mdc-switch__track::before,
+.mat-mdc-slide-toggle .mdc-switch:enabled .mdc-switch__track::after {
+  background-color: #FFF !important;
+  border: 1px solid #000;
+}
+
+.mdc-switch__handle::before,
+.mdc-switch__handle::after {
+  left: 3px !important;
+  background: #000 !important;
+}
+
+.mdc-switch--selected .mdc-switch__handle-track {
+  transform: translateX(68%) !important;
+}
+
+.mat-mdc-slide-toggle .mdc-switch:enabled .mdc-switch__track::before {
+  background-color: #fff !important;
+}
+
+.mat-calendar-header {
+  padding: 0 !important;
+}
+
+.mat-calendar-controls {
+  margin: 0 !important;
+}

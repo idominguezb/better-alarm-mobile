@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="flex justify-between items-center">
+    <img [routerLink]="'/alarms'" src="assets/close.svg" alt="Close">
+    <input type="text" placeholder="Nombre" class="text-center outline-none placeholder:font-medium placeholder:text-lg placeholder:font-rubik
+      placeholder:text-black text-black font-medium text-lg">
+    <button class="btn btn-primary border border-black rounded-md px-3 h-[24px] text-xs ff-roboto font-medium"
+      (click)="createAlarm()">Crear</button>
+  </div>
+
+
+  <div class="my-16 flex flex-1 w-full justify-center">
+    <div class="flex gap-2 items-center mr-3">
+      <input type="text" class="bg-black w-[90px] h-[72px] rounded-lg text-white text-5xl font-roboto text-center" value="08">
+      <span>:</span>
+      <input type="text" class="bg-black w-[90px] h-[72px] rounded-lg text-white text-5xl font-roboto text-center" value="54">
+    </div>
+    <mat-button-toggle-group>
+      <mat-button-toggle checked value="AM">AM</mat-button-toggle>
+      <mat-button-toggle class="border-left-none" value="PM">PM</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+  <div>
+    <div class="mb-6">
+      <div class="flex justify-between mb-2.5">
+        <div class="text-base text-black font-medium font-rubik">Repetir</div>
+      </div>
+      <div class="flex gap-2.5 ">
+        <div
+          class="w-[25px] h-[25px] rounded-full border-black border flex items-center justify-center text-xs font-bold font-roboto"
+          *ngFor="let day of days">{{day}}</div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex justify-between items-end">
+        <div class="text-base text-black font-medium font-rubik">Método de apagado</div>
+        <div class="font-rubik text-sm text-body">Por defecto ></div>
+      </div>
+    </div>
+
+    <div class="mb-0">
+      <div class="flex justify-between items-end">
+        <div class="text-base text-black font-medium font-rubik">Sonido</div>
+        <div class="font-rubik text-sm text-body" [routerLink]="'/alarms/sound'">Radar ></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between items-center">
+        <img src="assets/sound.svg" alt="" class="mr-1">
+        <mat-slider class="flex-1 h-[0px]" [disabled]="false" [max]="100" [min]="0" [step]="1" value="50"
+          [showTickMarks]="false">
+          <input matSliderThumb>
+        </mat-slider>
+      </div>
+    </div>
+
+    <div class="mb-2">
+      <div class="flex justify-between items-center">
+        <div class="text-base text-black font-medium font-rubik">Vibración</div>
+        <div class="font-rubik text-sm text-body">
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex justify-between items-end">
+        <div class="text-base text-black font-medium font-rubik">Silenciar</div>
+        <div class="font-rubik text-sm text-body" [routerLink]="'/alarms/silence'">5 min ></div>
+      </div>
+    </div>
+
+  </div>
+</div>

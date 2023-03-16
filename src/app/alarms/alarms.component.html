@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="text-black text-lg font-rubik font-bold mb-7">Alarmas</h1>
+
+  <div>
+    <div class="rounded-md bg-black pt-4 px-3 pb-5 text-white mb-6">
+      <div class="flex justify-between items-center">
+        <div class="font-medium font-rubik flex items-end " [routerLink]="'/alarms/create'">
+          <div class="text-4xl">7:30</div>
+          <div class="text-base ml-2 leading-7">AM</div>
+        </div>
+        <mat-slide-toggle></mat-slide-toggle>
+      </div>
+      <div class="flex justify-between mt-4">
+        <div class="font-rubik text-xs">
+          Despertar - Lun, Mar, Mie, Jue, Vie
+        </div>
+        <div class="relative right-2">
+          <img src="assets/delete.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [routerLink]="'/alarms/create'" class="w-[49px] h-[49px] rounded-full bg-body flex items-center justify-center cursor-pointer mt-auto self-center">
+    <img src="assets/plus.svg" alt="">
+  </div>
+
+  <app-menu></app-menu>
+</div>

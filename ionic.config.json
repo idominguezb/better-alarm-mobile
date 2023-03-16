@@ -1,0 +1,12 @@
+{
+  "defaultProject": "my-new-angular-app",
+  "projects": {
+    "my-new-angular-app": {
+      "name": "my-new-angular-app",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "angular"
+    }
+  }
+}
